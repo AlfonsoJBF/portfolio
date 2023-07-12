@@ -1,11 +1,21 @@
 :root{
   --bg_main: #242424;
+  --border_main: #727272;
+  --white: #f2f2f2;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.app{
+  display: flex;
+}
+.app__main{
+  display: block;
+  margin: auto;
+  
+ }
 
 .lateralNavBar{
   height: 100vh;
@@ -13,15 +23,79 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  border-right: 2px solid #727272ba;
+  border-right: 2px solid var(--border_main);
 }
 
 .lateralNavBar__button{
   background-color: var(--bg_main) ;
   height: 50px;
-  color: white;
+  color: var(--white);
 }
 
-.mainSection{
+.cards-container{
+  display:flex; 
+  gap: 20px;
+
+}
+
+.skillCard{
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
   position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.skillCard img{
+  width: 80%;
+  margin: auto;
+}
+.skillCard strong{
+  text-align: center;
+}
+
+.progressBar{
+  width: 80%;
+  height: 20px;
+  background-color: var(--white);
+  border-radius: 4px;
+  margin: auto;
+}
+
+.progress{
+  height: 100%;
+  background-color: aqua;
+  color: black;
+  text-align: end;
 }
