@@ -12,7 +12,7 @@ function App() {
   const [currentComponent, setCurrentComponent] = useState('Home');
 
   const renderComponent = () => {
-    switch(currentComponent){
+    switch (currentComponent) {
       case 'Home':
         return <HomeSection />;
       case 'Skills':

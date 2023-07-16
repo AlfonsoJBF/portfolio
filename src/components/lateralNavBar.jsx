@@ -1,3 +1,5 @@
+
+
 export default function LateralNavBar(params){
     const {logo, setCurrentComponent} = params
 
