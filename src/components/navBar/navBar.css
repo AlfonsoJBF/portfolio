@@ -1,0 +1,75 @@
+.lateralNavBar {
+    height: 100vh;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--color_secundary);
+    justify-content: space-between;
+}
+
+
+
+.NavBar__button {
+    background-color: var(--color_main);
+    height: 75px;
+    color: var(--color_secundary);
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in;
+}
+
+.NavBar__button:hover{
+  background-color: var(--color_secundary);
+  color: var(--color_main);
+  cursor: pointer;
+} 
+
+
+.lateralNavBar__buttonsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.stickyNavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--color_main--transparent);
+}
+
+.stickyNavBar img{
+    max-height:75px;
+}
+
+.stickyNavBar__buttons{
+    display: flex;
+    gap: 10px;
+    width: 75%;
+}
+.stickyNavBar div button{
+    width: calc(100%/4);
+}
+
+@media screen and (max-width: 500px){
+    .stickyNavBar__buttons{
+        display: none;
+    }
+
+    .stickyNavBar__buttons.toggled{
+       position: absolute;
+       top: 75px;
+       left: 0;
+       display: flex;
+       flex-direction: column;
+       background-color: var(--color_main--transparent);
+       z-index: 9998;
+    }
+
+    .NavBar__button{
+        background-color: var(--color_main--transparent);
+        z-index: 9999;
+    }
+
+}

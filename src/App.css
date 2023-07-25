@@ -1,75 +1,51 @@
 :root{
-  --bg_main: #242424;
-  --border_main: #727272;
+  --color_main: #242424;
+  --color_secundary: #85C1E9;
   --white: #f2f2f2;
   --borderWidth: 3px;
+  --title_size: 1.5rem;
+  --color_main--transparent: #24242482;
 }
+
 @font-face {
   font-family: 'Kanit';
   src: url('./assets/fonts/Kanit-Regular.ttf') format('Kanit-Regular');
 }
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Kanit-Regular', Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
+
 .app{
   display: flex;
   width: 100%;
   height: 100%;
 }
-.app__main{
-  height: 95%;
-  margin-top: 2%;
+
+@media screen and (max-width:701px) {
+  .app{
+    flex-direction: column;
+  }
   
 }
-
-.lateralNavBar{
-  height: 100vh;
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  border-right: 2px solid var(--border_main);
-  margin-right: 20px;
-}
-
-.lateralNavBar__button{
-  background-color: var(--bg_main) ;
-  height: 50px;
-  color: var(--white);
-}
-
-.skills-container{
+.app__main{
+  height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  z-index: -1;
+ 
 }
 
-.cards-container{
-  display:flex; 
-  gap: 20px;
-  flex-wrap: wrap;
-
-}
-
-.skillCard{
-  width: 250px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: rgba(152, 154, 155, 0.673) 0px 20px 30px -10px;
-}
-@media screen and (max-width:450px){
-  .skillCard{
-    width:90%;
-  }
-}
-
+/* ESTLOS DE EFECTOS */
 .gradient-border {
-  
+    
   background: #1D1F20;
   position: relative;
   border-radius: var(--borderWidth);
@@ -81,7 +57,7 @@
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #727272, #656565, #595959, #4C4C4C, #404040, #333333, #262626, #1A1A1A);
+  background: linear-gradient(60deg, #a3c6d9, #96b6cd, #89a6c1, #2d8ebd, #2d8ebd, #466c82, #3a5670, #2d404e);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
@@ -90,36 +66,17 @@
 
 
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.skillCard img{
-  width: 80%;
-  margin: auto;
-}
-.skillCard strong{
-  text-align: center;
-}
 
-.progressBar{
-  width: 80%;
-  height: 20px;
-  background-color: var(--white);
-  border-radius: 4px;
-  margin: auto;
-}
 
-.progress{
-  height: 100%;
-  color: black;
-  text-align: end;
-  border-radius: 4px;
-}
+
