@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import LateralNavBar from './components/lateralNavBar'
-import logoIMG from './assets/img/Logo.png'
-import SkillsSection from './components/skills'
+import NavBar from './components/navBar/NavBar.jsx'
+import SkillsSection from './components/skillsSection/skills'
 import ProjectsSection from './components/projects'
-import HomeSection from './components/home'
+import HomeSection from './components/homeSection/home'
 import WorksSection from './components/work'
 import ContactSection from './components/contact'
 import './App.css'
@@ -31,7 +30,7 @@ function App() {
   
   return (
     <div className='app'>
-      <LateralNavBar logo={logoIMG} setCurrentComponent={setCurrentComponent}/>
+      <NavBar  setCurrentComponent={setCurrentComponent}/>
       <main className='app__main'>{renderComponent()}</main>
       
       
