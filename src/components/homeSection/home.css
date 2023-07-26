@@ -6,7 +6,7 @@
     align-items: center;
 }
 header{
-    gap: 40px;
+    gap: 20px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -14,7 +14,7 @@ header{
     margin-bottom: 40px;
 }
 header img{
-    
+    width: 30%;
     resize: none;
     justify-content: end;
 }
@@ -29,8 +29,8 @@ header img{
     font-size: var(--title_size);
 }
 .writting_letters strong{
-    height: calc(var(--title_size)*2);
-    font-size: calc(var(--title_size)*2);
+    height: calc(var(--title_size)*1.5);
+    font-size: calc(var(--title_size)*1.5);
 }
 @media screen and (max-width:500px) {
     header{
@@ -46,7 +46,7 @@ header img{
     
 }
 .home__presentation{
-    width: 75%;
+    width: 50%;
     
 }
 
@@ -55,4 +55,10 @@ header img{
     color: var(--color_main);
     text-align: center;
    
+}
+
+.home__presentation p{
+    padding: 2%;
+    max-width: 70ch;
+    word-wrap: normal;
 }

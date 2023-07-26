@@ -1,10 +1,6 @@
-import { useEffect } from "react"
+import { useState } from "react"
 
-export default function NavBarButton(text, component){
+export default function NavBarButton({text, funcionality}){
 
-    const [enabled, setEnabled] = useEffect(true)
-    
-    
-
-    return(<button className="lateralNavBar__button">{text}</button>)
+    return(<button className="NavBar__button" onClick={() => funcionality(text)}>{text}</button>)
 }
