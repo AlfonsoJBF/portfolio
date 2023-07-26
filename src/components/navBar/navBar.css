@@ -3,8 +3,6 @@
     width: 150px;
     display: flex;
     flex-direction: column;
-    border-right: 2px solid var(--color_secundary);
-    justify-content: space-between;
 }
 
 
@@ -25,10 +23,7 @@
 } 
 
 
-.lateralNavBar__buttonsContainer {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .stickyNavBar{
     display: flex;
