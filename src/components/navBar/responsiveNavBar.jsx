@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import NavBarButton from "./navBarButton"
 
 export default function ResponsiveNavBar({promisedFunction, logo, closedLogo}){
-    const [width, setWidth] = useState(0)
+    const [width, setWidth] = useState(window.innerWidth)
     const [toggled, setToggled] = useState(false)
     const buttons = ['Skills', 'Works', 'Projects', 'Contact']
 
@@ -15,6 +15,8 @@ export default function ResponsiveNavBar({promisedFunction, logo, closedLogo}){
       };
     
       window.addEventListener('resize', handleResize);
+
+      
     
     }, []);
 

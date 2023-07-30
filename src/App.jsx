@@ -4,7 +4,7 @@ import SkillsSection from './components/skillsSection/skills'
 import ProjectsSection from './components/projects'
 import HomeSection from './components/homeSection/home'
 import WorksSection from './components/work'
-import ContactSection from './components/contact'
+import ContactSection from './components/contact/contact.jsx'
 import './App.css'
 
 function App() {

@@ -4,7 +4,7 @@
   --white: #f2f2f2;
   --borderWidth: 3px;
   --title_size: 1.5rem;
-  --color_main--transparent: #24242482;
+  --color_main--transparent: #242424cd;
 }
 
 @font-face {
@@ -23,6 +23,31 @@
 body{
   height: 100%;
 }
+h2{
+  font-size: var(--title_size);
+  color: var(--color_secundary);
+}
+h3{
+  background-color: var(--color_secundary);
+  color: var(--color_main);
+  text-align: center;
+  margin-bottom: 10px ;
+  width: 100%;
+}
+article{
+  border: 3px solid var(--color_secundary);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: var(--color_main);
+  z-index: -2;
+}
+article p{
+  padding:2%;
+  max-width: 70ch;
+  word-wrap: normal;
+}
+
 
 .app{
   display: flex;
@@ -30,22 +55,25 @@ body{
   height: 100%;
 }
 
-@media screen and (max-width:701px) {
-  .app{
-    flex-direction: column;
-  }
-  
-}
 .app__main{
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
   border-left: 2px solid var(--color_secundary);
   min-height: 100vh;
+  
  
+}
+
+@media  screen and (max-width: 700px) {
+  .app{
+    flex-direction: column;
+  }
+  .app__main{
+    border-left: none;
+  }
 }
 
 /* ESTLOS DE EFECTOS */

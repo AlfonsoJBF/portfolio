@@ -4,38 +4,46 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    gap: 50px;
   }
 
-  .cards-container{
+ 
+  article{
+    border: 3px solid var(--color_secundary);
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    width: 90%;
+    background-color: var(--color_main);
+    z-index: -2;
   }
+  article p{
+    padding:2%;
+    max-width: 70ch;
+    word-wrap: normal;
+  }
+
   
-  .cards-container div{
+  .cards-container{
     display:flex; 
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1%;
+    margin-bottom: 10px;
   
   }
+ 
   
   .skillCard{
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     box-shadow: #2E86C1 0px 20px 30px -10px;
+    background-color: #171717;
   }
-  @media screen and (max-width:450px){
-    .skillCard{
-      width:90%;
-    }
-  }
+ 
   
   
   
@@ -61,3 +69,17 @@
     text-align: end;
     border-radius: 4px;
   }
+
+
+  .info{
+    width: 90%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .softSkills{
+    padding: 2%;
+    padding-left: 5%;
+    list-style: square;
+  }
+  

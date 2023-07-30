@@ -1,3 +1,8 @@
+.lateralNavBar, .stickyNavBar{
+    background-color: var(--color_main--transparent);
+}
+
+
 .lateralNavBar {
     height: 100vh;
     width: 150px;
@@ -8,7 +13,7 @@
 
 
 .NavBar__button {
-    background-color: var(--color_main);
+    background-color: transparent;
     height: 75px;
     color: var(--color_secundary);
     outline: none;
@@ -31,7 +36,8 @@
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: var(--color_main--transparent);
+    
+    z-index: 100;
 }
 
 .stickyNavBar img{
@@ -63,7 +69,7 @@
     }
 
     .NavBar__button{
-        background-color: var(--color_main--transparent);
+        
         z-index: 9999;
     }
 

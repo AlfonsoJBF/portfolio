@@ -1,6 +1,8 @@
 export default function SkillCard(params){
     const {img, skill, progress, bgColor} = params;
     return(
+        
+
         <div className="skillCard gradient-border">
             <img src={img} alt={`Imagen sobre ${skill}`}></img>
 
@@ -12,5 +14,6 @@ export default function SkillCard(params){
                 </div>
             </div>
         </div>
+        
     )
 }

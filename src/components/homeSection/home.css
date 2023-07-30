@@ -49,16 +49,3 @@ header img{
     width: 50%;
     
 }
-
-.home__presentation h3{
-    background-color: var(--color_secundary);
-    color: var(--color_main);
-    text-align: center;
-   
-}
-
-.home__presentation p{
-    padding: 2%;
-    max-width: 70ch;
-    word-wrap: normal;
-}

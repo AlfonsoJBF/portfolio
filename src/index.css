@@ -12,3 +12,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+body{
+  background-image: url(./assets/img/backgrounds/fondo-espacial-polvo-estrellas-estrellas-brillantes-cosmos-colorido-realista-nebulosa-via-lactea_1258-150914.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+}
