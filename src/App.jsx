@@ -3,7 +3,7 @@ import NavBar from './components/navBar/NavBar.jsx'
 import SkillsSection from './components/skillsSection/skills'
 import ProjectsSection from './components/projects'
 import HomeSection from './components/homeSection/home'
-import WorksSection from './components/work'
+import WorksSection from './components/trabajos/work.jsx'
 import ContactSection from './components/contact/contact.jsx'
 import './App.css'
 

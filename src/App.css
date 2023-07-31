@@ -26,6 +26,9 @@ body{
 h2{
   font-size: var(--title_size);
   color: var(--color_secundary);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 h3{
   background-color: var(--color_secundary);
