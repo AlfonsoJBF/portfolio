@@ -36,6 +36,7 @@ h3{
   text-align: center;
   margin-bottom: 10px ;
   width: 100%;
+  font-size: calc(var(--title_size) * 0.75);
 }
 article{
   border: 3px solid var(--color_secundary);
@@ -66,6 +67,7 @@ article p{
   align-items: center;
   border-left: 2px solid var(--color_secundary);
   min-height: 100vh;
+  padding: 20px;
   
  
 }

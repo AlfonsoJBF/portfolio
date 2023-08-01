@@ -5,15 +5,15 @@ export default function ContactSection(){
     return(
     <section className="contact">
         
-        <form action="" method="post" className="gradient-border">
+        <form action="https://formsubmit.co/alfonsojbfraguio@gmail.com" method="post" className="gradient-border">
 
             <h3>Enviame tu idea</h3>
 
-            <label htmlFor="name">Nombre:</label>
+            <label htmlFor="name">Nombre: <span>*</span></label>
             <input type="text" name="name" placeholder="Introduce tu nombre" required />
-            <label htmlFor="apellidos">Apellidos:</label>
+            <label htmlFor="apellidos">Apellidos: <span>*</span></label>
             <input type="text" name="apellidos" placeholder="Introduce tus apellidos" required />
-            <label htmlFor="email">Correo electrónico:</label>
+            <label htmlFor="email">Correo electrónico: <span>*</span></label>
             <input type="text" name="email" placeholder="Introduce tu correo" required />
             <label htmlFor="company">Nombre de la empresa:</label>
             <input type="text" name="company" placeholder="Opcional" />

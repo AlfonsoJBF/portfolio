@@ -4,7 +4,7 @@ import NavBarButton from "./navBarButton"
 export default function ResponsiveNavBar({promisedFunction, logo, closedLogo}){
     const [width, setWidth] = useState(window.innerWidth)
     const [toggled, setToggled] = useState(false)
-    const buttons = ['Skills', 'Works', 'Projects', 'Contact']
+    const buttons = ['Habilidades', 'CV', 'Proyectos', 'Contacto']
 
     const handleToggle = ( ) => {
       setToggled(!toggled)

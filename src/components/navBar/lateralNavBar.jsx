@@ -2,7 +2,7 @@ import NavBarButton from "./navBarButton"
 
 export default function LateralNavBar({promisedFunction, logo}){
 
-    const buttons = ['Skills', 'Works', 'Projects', 'Contact']
+    const buttons = ['Habilidades', 'CV', 'Proyectos', 'Contacto']
     return(
       <nav className="lateralNavBar">
               

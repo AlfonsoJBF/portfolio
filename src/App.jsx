@@ -14,13 +14,13 @@ function App() {
     switch (currentComponent) {
       case 'Home':
         return <HomeSection />;
-      case 'Skills':
+      case 'Habilidades':
         return <SkillsSection />;
-      case 'Projects':
+      case 'Proyectos':
         return <ProjectsSection />
-      case 'Works':
+      case 'CV':
         return <WorksSection/>;
-      case 'Contact':
+      case 'Contacto':
         return <ContactSection />;
       default:
         return <HomeSection />;

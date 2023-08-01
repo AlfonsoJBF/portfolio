@@ -36,8 +36,8 @@
  
   
   .skillCard{
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     box-shadow: #2E86C1 0px 20px 30px -10px;
@@ -75,11 +75,17 @@
     width: 90%;
     display: flex;
     gap: 20px;
+    justify-content: center;
+  }
+
+  .softSkills__container, .roadTo{
+    max-width: fit-content;
   }
 
   .softSkills{
-    padding: 2%;
+    margin-left: 10px;
     padding-left: 5%;
     list-style: square;
+    
   }
   
