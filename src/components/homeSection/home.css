@@ -27,10 +27,16 @@ header img{
 }
 .writting_letters h2{
     font-size: var(--title_size);
+    text-align: start;
 }
 .writting_letters strong{
     height: calc(var(--title_size)*1.5);
     font-size: calc(var(--title_size)*1.5);
+}
+.home__presentation{
+    max-width: 70ch;
+    max-width: fit-content;
+    
 }
 @media screen and (max-width:500px) {
     header{
@@ -43,9 +49,13 @@ header img{
         width: 100%;
         text-align: center;
     }
+    .writting_letters h2{
+        text-align: center;
+    }
+
+    .home__presentation{
+        width: 100%;
+    }
     
 }
-.home__presentation{
-    width: 50%;
-    
-}
+

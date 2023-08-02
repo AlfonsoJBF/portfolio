@@ -11,9 +11,9 @@ export default function SocialLinks(){
         <h3>Redes Sociales</h3>
         <div>
 
-            <span className='social__card'> <img src={GIT_LOGO} alt="" /><a href="">GitHub</a></span>
-            <span className='social__card'> <img src={LI_LOGO} alt="" /><a href="">LinkedIn</a></span>
-            <span className='social__card'> <img src={IG_LOGO} alt="" /><a href="">Instagram</a></span>
+            <span className='social__card'> <img src={GIT_LOGO} alt="logo de GitHub" /><a href="https://github.com/AlfonsoJBF"  target='_blank'>GitHub</a></span>
+            <span className='social__card'> <img src={LI_LOGO} alt="Logo de LinkedIn" /><a href="" target='_blank'>LinkedIn</a></span>
+            <span className='social__card'> <img src={IG_LOGO} alt="Logo de Instagram" /><a href="https://www.instagram.com/alfonso.bustoosf/" target='_blank'>Instagram</a></span>
                 
         </div>
     </div>

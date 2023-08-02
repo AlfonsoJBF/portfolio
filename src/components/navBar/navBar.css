@@ -8,6 +8,9 @@
     width: 150px;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 
@@ -15,6 +18,8 @@
 .NavBar__button {
     background-color: transparent;
     height: 75px;
+    width: 100%;
+    text-align: center;
     color: var(--color_secundary);
     outline: none;
     border: none;
@@ -68,8 +73,8 @@
        z-index: 9998;
     }
 
-    .NavBar__button{
-        
+    .stickyNavBar__buttons.toggled .NavBar__button{
+        width: 100%;
         z-index: 9999;
     }
 
