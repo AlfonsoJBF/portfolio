@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import LOGO from '../../assets/SVG/logo_JBF.SVG'
+import LOGO from '../../assets/SVG/logo_JBF.svg'
 import CLOSED_LOGO from '../../assets/SVG/menu-svgrepo-com.svg'
 import LateralNavBar from './lateralNavBar'
 import ResponsiveNavBar from './responsiveNavBar'
